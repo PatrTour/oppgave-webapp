@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IT Hjelp</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+    <script src="node_modules/feather-icons/dist/feather.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+
+    <script src="init.js"></script>
+  </head>
+  <body>
+
+    <h2>Hva trenger du hjelp med?</h2>
+
+    <div id="options">
+      <select id="type">
+        <option value="it1">IT1</option>
+        <option value="it2">IT2</option>
+      </select>
+
+      <select id="day">
+        <option value="torsdag">Torsdagsgruppen</option>
+        <option value="fredag">Fredagsgruppen</option>
+      </select>
+
+      <button id="refresh" onclick="refreshProblems()">Refresh</button>
+    </div>
+
+
+    <div id="problems">
+
+    </div>
+
+
+    <div id="problem-menu">
+      <input type="text" placeholder="Beskriv problemet..." id="problem">
+      <div id="inline">
+        <input type="text" placeholder="Skriv ditt fulle navn..." id="name">
+        <button id="submit" onclick="createProblem()"><i data-feather="send"></i></button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+  </body>
+</html>

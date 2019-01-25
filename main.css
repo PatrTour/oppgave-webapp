@@ -1,0 +1,117 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+#options {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#problems {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+#problems .problem-item {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 10px;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#problems .problem-item .info {
+  display: flex;
+  flex-direction: row;
+}
+
+#problems .problem-item .info p {
+  margin: 15px 10px;
+}
+
+#problems .problem-item .info #problem {
+  color: #707070;
+}
+
+#problems .problem-item button {
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  padding: auto 15px;
+}
+#problems .problem-item button .feather {
+  stroke: #4F4F4F;
+  width: 15px;
+  height: 15px;
+}
+
+#problems .problem-item .info span {
+  height: 100%;
+  width: 1px;
+  background: #707070;
+}
+
+#problem-menu {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 330px;
+}
+
+#problem-menu input {
+  height: 40px;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#problem-menu #problem {
+  width: 100%;
+  margin: 10px;
+}
+
+#problem-menu #inline {
+  display: flex;
+  margin: 10px;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#submit {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #707070;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#submit .feather {
+  stroke: #4F4F4F;
+  width: 15px;
+  height: 15px;
+}
